@@ -1,6 +1,6 @@
 {
   "name": "dsh-goofish-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "闲鱼 (Xianyu / Goofish) read-only MCP monitoring for DeepSeek Harness: drives the goofish-cli MCP server (stdio subprocess) and exposes read-only tools (search / item detail / listing / IM history) under mcp__goofish__*; write-capable tools (publish / delete / send / auth_login) are intentionally filtered out",
   "type": "module",
   "main": "lib/index.mjs",
@@ -11,6 +11,9 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
     }
   },
   "files": [
