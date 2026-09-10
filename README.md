@@ -22,6 +22,18 @@
 2. 登录一次（cookie/二维码）：`goofish auth login` 或 `goofish auth login --qr`
 3. 确认：`goofish auth status` → `valid: true`
 
+## 安装 / Install
+
+```sh
+# from npm (published package)
+dsh plugin --profile web add dsh-goofish-mcp
+
+# or local development
+dsh plugin --profile web add link:/path/to/dsh-xianyu
+
+# then restart dsh web to activate
+```
+
 ## Agent 工具
 
 - `goofish_status` — 连接/注册/只读状态
